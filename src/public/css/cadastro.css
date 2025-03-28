@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+}
+*{
+    padding: 1px;
+}
+
+.notificaCPF {
+  display: none;
+  position: absolute;
+  background-color: #ffdddd;
+  color: red;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  left: 104px;
+  width: max-content;
+  white-space: nowrap;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.sobre {
+  background-color: #808080;
+}
+
+footer p{
+  color: #000;
+  font-size: 1.1em;
+}
+
+
+/*
+.localizaçao {
+ 
+  }
+  .localizaçao div {
+    display: flex;
+    flex-direction: column;  
+    gap: 0.1px;  
+  } 
+
+.pessoa
+  {
+    padding-left: 0px; 
+  }
+
+  h2 {
+    padding-left: 10px;
+  }
+.caio {
+    padding-left: 10px;
+} 
+button {
+    width: 110px;
+}
+
+input  {
+    width: 150px 
+  
+  }
+  */
