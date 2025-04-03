@@ -4,30 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Impedir a execução de scripts externos -->
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
-    <!-- Título da janela -->
-    <title>Criar Cadastro</title>
+    <!-- Título que será exibido na janela -->
+    <title>Cadastro de clientes</title>
     <!-- Bootstrap -->
-    <!--link rel="stylesheet" href="../public/css/bootstrap.min.css"-->
-    <!-- CSS Personalizado ATENÇÃO!!! sempre após o CSS do bootstrap -->
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="../public/css/style.css">
+    <!-- impedir a execução de scripts externos ou não autorizados -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
 </head>
 
 <body>
-    <div class="container">
-       
+    <div class="container button">
+        <img src="../public/img/clientes.png" alt="clientes" title="Cadastro de clientes" onclick="client()">       
     </div>
-
     <footer>
         <p id="dataAtual"></p>
-        <img src="../public/img/dboff.png" alt="icone banco de dados" id="iconeDB">
+        <img src="../public/img/dboff.png" alt="dbicon" id="statusdb">
     </footer>
 
     <!-- Bootstrap -->
-    <!--script src="../public/js/bootstrap.min.js"></script-->
-
-    <!-- Processo de renderização -->
+    <script src="../public/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="../public/js/script.js"></script>
+    <!-- Renderizador -->
     <script src="renderer.js"></script>
 </body>
 
