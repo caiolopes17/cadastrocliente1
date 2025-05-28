@@ -5,6 +5,8 @@
 
 console.log("Processo de renderização")
 
+
+
 // Envio de uma mensagem para o main abrir a janela clinte
 function client() {
     //console.log("teste do botão cliente")
