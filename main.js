@@ -84,7 +84,7 @@ function clientWindow() {
             }
         })
     }
-    client.loadFile('./src/views/cadastro2.html')
+    client.loadFile('./src/views/cliente.html')
     client.center() //iniciar no centro da tela   
 }
 

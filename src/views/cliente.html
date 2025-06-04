@@ -2,32 +2,36 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Busca de Endereço por CEP</title>
-  <link rel="shortcut icon" href="../public/img/cadastro.png" type="image/x-icon">
-  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../public/css/cadastro.css">
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="shortcut icon" href="../public/img/cadastro.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/cadastro.css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
 </head>
 
 <body class="bg-dark text-light">
 
-  <div class="container">
-        <form id="frmBusca">
-            
+    <div class="container">
+
+
         </form>
-        <form id="frmClient" class="mt-2 row g-3">
+        <form id="formClient" class="mt-2 row g-3">
             <!-- Buscar cliente -->
             <div class="col-md-6">
-                <input type="text" class="form-control" id="searchClient" required maxlength="30" spellcheck="false">
+                <input type="text" class="form-control" id="searchClient" maxlength="30" spellcheck="false">
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-primary" id="btnRead" onclick="searchClient()">Buscar</button>
+                <button type="button" class="btn btn-primary" id="btnRead" onclick="searchName()">Buscar</button>
             </div>
-            
+
             <!-- Linha -->
             <hr class="mt-4 border border-primary border -1">
+
+            <!-- Id do cliente (oculto) -->
+            <input type="text" id="inputIdClient" hidden>
+
 
             <!-- Nome -->
             <div class="col-md-8">
@@ -57,7 +61,8 @@
             <!-- CEP -->
             <div class="col-md-2">
                 <label for="inputCEPClient" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="inputCEPClient" spellcheck="false" maxlength="9" required onblur="buscarCEP()">
+                <input type="text" class="form-control" id="inputCEPClient" spellcheck="false" maxlength="9" required
+                    onblur="buscarCEP()">
             </div>
 
             <!-- Logradouro -->
@@ -132,7 +137,7 @@
             <div class="mt-5">
                 <button type="submit" class="btn btn-success" id="btnCreate">Adicionar</button>
                 <button type="submit" class="btn btn-warning" id="btnUpdate">Editar</button>
-                <button type="button" class="btn btn-danger" id="btnDelete">Excluir</button>
+                <button type="button" class="btn btn-danger" id="btnDelete" onclick="removeClient()">Excluir</button>
                 <button type="reset" class="btn" id="btnReset" onclick="resetForm()"></button>
             </div>
 
